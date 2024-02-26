@@ -4,7 +4,7 @@ integer i;
 always@(data,we,re,addr) 
 begin 
 if(we && ~re) 
-mem[addr]=data; 
+  mem[addr]=data; // test
 end 
 assign data=(re && !we)?mem[addr]:16'bz; 
 endmodule
