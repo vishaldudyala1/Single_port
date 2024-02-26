@@ -8,3 +8,6 @@ mem[addr]=data;
 end 
 assign data=(re && !we)?mem[addr]:16'bz; 
 endmodule
+
+
+// test
